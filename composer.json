@@ -1,0 +1,24 @@
+{
+    "name": "moosend/mootracker",
+    "authors": [
+        {
+            "name": "Yannis Psarras",
+            "email": "yannis@moosend.com"
+        }
+    ],
+    "require": {
+        "moosend/website-tracking": "~1.12"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8",
+        "deployer/deployer": "~3.3"
+    },
+    "autoload": {
+        "files": ["MooTracker.php"]
+    },
+    "scripts": {
+        "test": "phpunit --colors=always --debug",
+        "start": "php -S localhost:8080",
+        "deploy": "dep staging"
+    }
+}
